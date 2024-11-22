@@ -1,51 +1,51 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  min-inline-size: 375px;
   margin: 0 auto;
-  font-family: var(--main-font, serif);
   color: var(--accept-color, #ff0070);
+  font-family: var(--main-font, serif);
   font-size: 18px;
   background-image: url("../images/cover-image-dark.png");
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  min-inline-size: 375px;
 }
 
 .decorated-zone::before {
   content: "";
+  position: absolute;
+  border-inline-end: 1px solid var(--accept-color);
+  border-block-start: 1px solid var(--accept-color);
+  background-color: transparent;
   inline-size: 25px;
   block-size: 25px;
-  background-color: transparent;
-  position: absolute;
-  border-block-start: 1px solid var(--accept-color);
-  border-inline-end: 1px solid var(--accept-color);
   inset-inline-end: 10px;
   inset-block-start: 10px;
 }
 
 .decorated-zone::after {
   content: "";
+  position: absolute;
+  border-inline-start: 1px solid var(--accept-color);
+  border-block-end: 1px solid var(--accept-color);
+  background-color: transparent;
   inline-size: 25px;
   block-size: 25px;
-  background-color: transparent;
-  position: absolute;
-  border-block-end: 1px solid var(--accept-color);
-  border-inline-start: 1px solid var(--accept-color);
   inset-inline-start: 10px;
   inset-block-end: 10px;
 }
 
 .header {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
-  position: relative;
+  align-items: center;
   padding: 3vi;
   min-block-size: calc(100dvb - 20px);
   block-size: 100vh;
-  align-items: center;
 }
 
 .header__theme-menu {
@@ -56,24 +56,24 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   justify-content: center;
   align-items: flex-end;
-  list-style: none;
+  gap: 10px;
   padding: 0;
+  list-style: none;
 }
 
 .header__theme-menu-button {
   border: none;
-  background-color: transparent;
+  padding-inline: 13px;
   color: currentColor;
   font-family: inherit;
-  line-height: 23px;
-  padding-inline: 13px;
   font-size: 18px;
+  line-height: 23px;
   text-align: center;
-  cursor: pointer;
   text-transform: lowercase;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
@@ -95,23 +95,23 @@
 
 .curcle {
   position: absolute;
-  text-transform: uppercase;
-  text-align: end;
-  padding-inline-end: 2.7ch;
   top: 10px;
   right: 10px;
+  padding-inline-end: 2.7ch;
+  text-align: end;
+  text-transform: uppercase;
 }
 
 .curcle::after {
   content: "";
   position: absolute;
+  border-radius: 100%;
+  box-shadow: 0px 0px 4px 2px var(--accept-color);
+  background-color: var(--accept-color);
   inline-size: 9px;
   block-size: 9px;
-  background-color: var(--accept-color);
-  border-radius: 100%;
   inset-block-start: 8px;
   inset-inline-end: 9px;
-  box-shadow: 0px 0px 4px 2px var(--accept-color);
 }
 
 .header__text {
@@ -122,17 +122,17 @@
   display: flex;
   justify-content: flex-start;
   color: var(--main-title-color);
-  text-shadow: var(--accept-color) 0.5vh 0.5vh;
   font-size: clamp(7.25rem, 6.3958rem + 3.7963vw, 9.8125rem);
   line-height: 82.5%;
+  text-shadow: var(--accept-color) 0.5vh 0.5vh;
 }
 
 .title-decor {
-  background-color: var(--accept-color);
   color: var(--bg-color);
-  font-size: 18px;
   font-weight: 700;
+  font-size: 18px;
   line-height: 23.4px;
+  background-color: var(--accept-color);
 }
 
 .main {
@@ -141,10 +141,10 @@
 }
 
 .concentrate {
-  padding-block-start: 3.7ch;
   display: flex;
   flex-direction: column;
   gap: 50px;
+  padding-block-start: 3.7ch;
 }
 
 .concentrate__reasons-link,
@@ -185,8 +185,8 @@
 }
 
 .title {
-  font-size: 18px;
   font-weight: 700;
+  font-size: 18px;
   line-height: 23.4px;
 }
 
@@ -202,8 +202,8 @@
 
 .advice__better {
   display: grid;
-  gap: 20px;
   align-items: start;
+  gap: 20px;
 }
 
 .advice__wrapper {
@@ -249,21 +249,21 @@
 }
 
 .picture__img {
+  object-fit: cover;
+  object-position: center;
   inline-size: 100%;
   block-size: 100%;
-  object-position: center;
-  object-fit: cover;
 }
 
 .footer {
-  block-size: 100vh;
-  background-color: var(--bg-color, #000028);
   position: relative;
-  padding: 0px 10px 0;
-  min-block-size: 668px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0px 10px 0;
+  background-color: var(--bg-color, #000028);
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .footer__title {
@@ -280,10 +280,10 @@
   }
 
   .header__text {
-    width: 364px;
     display: flex;
     flex-direction: column;
     justify-self: end;
+    width: 364px;
   }
 
   .decorated-zone::before {
@@ -306,8 +306,8 @@
   }
 
   .concentrate {
-    padding-block-start: 60px;
     gap: 80px;
+    padding-block-start: 60px;
   }
 
   .concentrate__title {
@@ -388,9 +388,9 @@
   }
 
   .header__theme-menu {
-    padding-inline-start: 19px;
     justify-self: center;
     align-self: start;
+    padding-inline-start: 19px;
   }
 
   .header__theme-menu-list {
@@ -414,8 +414,8 @@
     align-items: start;
   }
   .concentrate__div {
-    grid-row: 2;
     grid-column: auto;
+    grid-row: 2;
   }
 
   .advice__better {
