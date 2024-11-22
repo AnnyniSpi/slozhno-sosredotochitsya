@@ -5,7 +5,7 @@
   color: var(--accept-color, #ff0070);
   font-family: var(--main-font, serif);
   font-size: 18px;
-  background-image: url("../images/cover-image-dark.png");
+  background-image: var(--background-image);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -16,8 +16,8 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  border-inline-end: 1px solid var(--accept-color);
-  border-block-start: 1px solid var(--accept-color);
+  border-inline-end: 1px solid var(--title-color);
+  border-block-start: 1px solid var(--title-color);
   background-color: transparent;
   inline-size: 25px;
   block-size: 25px;
@@ -28,8 +28,8 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  border-inline-start: 1px solid var(--accept-color);
-  border-block-end: 1px solid var(--accept-color);
+  border-inline-start: 1px solid var(--title-color);
+  border-block-end: 1px solid var(--title-color);
   background-color: transparent;
   inline-size: 25px;
   block-size: 25px;
@@ -106,7 +106,7 @@
   content: "";
   position: absolute;
   border-radius: 100%;
-  box-shadow: 0px 0px 4px 2px var(--accept-color);
+  box-shadow: 0px 0px 4px 2px var(--color-shadow);
   background-color: var(--accept-color);
   inline-size: 9px;
   block-size: 9px;
@@ -115,6 +115,7 @@
 }
 
 .header__text {
+  color: var(--header-text-color);
   align-self: center;
 }
 
@@ -124,11 +125,10 @@
   color: var(--main-title-color);
   font-size: clamp(7.25rem, 6.3958rem + 3.7963vw, 9.8125rem);
   line-height: 82.5%;
-  text-shadow: var(--accept-color) 0.5vh 0.5vh;
+  text-shadow: var(--color-shadow) 0.5vh 0.5vh;
 }
 
 .title-decor {
-  color: var(--bg-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
@@ -150,7 +150,7 @@
 .concentrate__reasons-link,
 .advice-link {
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accept-color);
+  text-shadow: 2px 2px 0 var(--color-shadow);
 }
 
 .concentrate__reasons-link {
@@ -185,13 +185,14 @@
 }
 
 .title {
+  color: var(--title-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
 }
 
 .subtitle {
-  color: var(--bg-color);
+  color: var(--subtitle-color);
   font-size: 18px;
   line-height: 23.4px;
 }
@@ -267,7 +268,7 @@
 }
 
 .footer__title {
-  text-shadow: 2px 2px 0 var(--accept-color);
+  text-shadow: 2px 2px 0 var(--color-shadow);
 }
 
 @media screen and (width >= 768px) {
@@ -420,5 +421,13 @@
 
   .advice__better {
     grid-template-columns: minmax(min-content, 315px) 1fr;
+  }
+
+  .main-title {
+    text-shadow: var(--big-size-color-shadow) 0.5vh 0.5vh;
+  }
+
+  .footer__title {
+    text-shadow: 2px 2px 0 var(--big-size-color-shadow);
   }
 }
