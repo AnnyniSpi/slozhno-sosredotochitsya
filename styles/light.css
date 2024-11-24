@@ -16,8 +16,9 @@
   --header-text-color: #353430;
   --big-size-color-shadow: #ff0070;
   --border-color: #353430;
+  --menu-color: #353430;
 
-  .curcle {
+  .circle {
     display: none;
   }
 
@@ -34,6 +35,7 @@
       --header-text-color: #353430;
       --big-size-color-shadow: #ff0070;
       --border-color: #353430;
+      --menu-color: #353430;
     }
   }
 }
