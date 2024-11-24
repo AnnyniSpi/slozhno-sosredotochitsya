@@ -262,7 +262,6 @@
   justify-content: center;
   align-items: center;
   padding: 0px 10px 0;
-  background-color: var(--bg-color, #000028);
   block-size: 100vh;
   min-block-size: 668px;
 }
