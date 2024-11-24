@@ -89,7 +89,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accept-color);
+  border: 1px solid var(--border-color);
   pointer-events: none;
 }
 

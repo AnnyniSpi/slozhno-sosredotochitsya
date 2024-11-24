@@ -15,10 +15,7 @@
   --subtitle-color: #353430;
   --header-text-color: #353430;
   --big-size-color-shadow: #ff0070;
-
-  .header__theme-menu-button_active {
-    border: 1px solid var(--text-color);
-  }
+  --border-color: #353430;
 
   .curcle {
     display: none;
@@ -36,6 +33,7 @@
       --subtitle-color: #353430;
       --header-text-color: #353430;
       --big-size-color-shadow: #ff0070;
+      --border-color: #353430;
     }
   }
 }
