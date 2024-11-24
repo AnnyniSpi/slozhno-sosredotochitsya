@@ -17,6 +17,7 @@
   --big-size-color-shadow: #ff0070;
   --border-color: #353430;
   --menu-color: #353430;
+  --header-decor-color: #353430;
 
   .circle {
     display: none;
@@ -36,6 +37,7 @@
       --big-size-color-shadow: #ff0070;
       --border-color: #353430;
       --menu-color: #353430;
+      --header-decor-color: #353430;
     }
   }
 }

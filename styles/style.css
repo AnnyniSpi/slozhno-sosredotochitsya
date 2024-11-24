@@ -16,8 +16,8 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  border-inline-end: 1px solid var(--title-color);
-  border-block-start: 1px solid var(--title-color);
+  border-inline-end: 1px solid var(--header-decor-color);
+  border-block-start: 1px solid var(--header-decor-color);
   background-color: transparent;
   inline-size: 25px;
   block-size: 25px;
@@ -28,8 +28,8 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  border-inline-start: 1px solid var(--title-color);
-  border-block-end: 1px solid var(--title-color);
+  border-inline-start: 1px solid var(--header-decor-color);
+  border-block-end: 1px solid var(--header-decor-color);
   background-color: transparent;
   inline-size: 25px;
   block-size: 25px;
