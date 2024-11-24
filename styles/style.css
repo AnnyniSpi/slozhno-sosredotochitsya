@@ -93,7 +93,7 @@
   pointer-events: none;
 }
 
-.curcle {
+.circle {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -102,7 +102,7 @@
   text-transform: uppercase;
 }
 
-.curcle::after {
+.circle::after {
   content: "";
   position: absolute;
   border-radius: 100%;
@@ -297,7 +297,7 @@
     inset-block-end: 20px;
   }
 
-  .curcle {
+  .circle {
     top: 20px;
     right: 20px;
   }
