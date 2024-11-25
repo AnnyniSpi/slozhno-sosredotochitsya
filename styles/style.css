@@ -3,7 +3,7 @@
 .page {
   margin: 0 auto;
   background-color: var(--bg-color);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font), sans-serif;
   font-size: 18px;
   background-image: var(--background-image);
   background-repeat: no-repeat;
@@ -147,36 +147,46 @@
   padding-block-start: 3.7ch;
 }
 
-.concentrate__reasons-link,
-.advice-link {
+.decor-link {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--color-shadow);
 }
 
-.concentrate__reasons-link {
+.decor-link:hover {
   border-bottom: 1px solid currentColor;
 }
 
-.concentrate__reasons-link:hover,
-.advice-link:hover {
-  border-bottom: 1px solid currentColor;
-}
-
-.concentrate__reasons-link:focus,
-.advice-link:focus {
+.decor:focus {
   outline: none;
 }
 
-.concentrate__reasons-link:focus-visible,
-.advice-link:focus-visible {
+.decor:focus-visible {
   outline: 1px solid currentColor;
 }
 
-.concentrate__reasons,
-.concentrate__reduces {
+.concentrate__reasons {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.attention {
+  padding-block-start: 57px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.attention__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.attention__div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
 }
 
 .advice,
@@ -226,6 +236,7 @@
 }
 
 .concentrate__text,
+.attention__text,
 .advice__text {
   color: var(--text-color);
   line-height: 23.4px;
@@ -306,27 +317,12 @@
   }
 
   .concentrate {
-    gap: 80px;
     padding-block-start: 60px;
-  }
-
-  .concentrate__title {
-    display: inline-block;
-    inline-size: 236px;
   }
 
   .concentrate__reasons {
     display: grid;
     grid-template-columns: minmax(min-content, 234px) 1fr;
-  }
-
-  .concentrate__reasons-link {
-    border-bottom: none;
-  }
-
-  .concentrate__reduces {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 
   .concentrate__reasons-div {
@@ -335,6 +331,15 @@
 
   .concentrate__div {
     grid-column: span 2;
+  }
+
+  .attention {
+    padding-block-start: 60px;
+  }
+
+  .attention__title {
+    display: inline-block;
+    inline-size: 236px;
   }
 
   .advice,
@@ -409,13 +414,14 @@
     inline-size: 315px;
   }
 
-  .concentrate__reduces {
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: start;
-  }
   .concentrate__div {
     grid-column: auto;
     grid-row: 2;
+  }
+
+  .attention .attention__wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
   }
 
   .advice__better {
