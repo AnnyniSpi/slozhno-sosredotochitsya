@@ -407,10 +407,10 @@
   }
 
   .concentrate__reasons {
-    grid-template-columns: minmax(min-content, 290px) 1fr;
+    grid-template-columns: minmax(min-content, 315px) 1fr;
   }
 
-  .concentrate__title {
+  .attention__title {
     inline-size: 315px;
   }
 
