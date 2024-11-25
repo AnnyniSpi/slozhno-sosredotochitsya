@@ -156,11 +156,11 @@
   border-bottom: 1px solid currentColor;
 }
 
-.decor:focus {
+.decor-link:focus {
   outline: none;
 }
 
-.decor:focus-visible {
+.decor-link:focus-visible {
   outline: 1px solid currentColor;
 }
 
