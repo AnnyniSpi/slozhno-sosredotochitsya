@@ -2,9 +2,9 @@
 
 .page {
   margin: 0 auto;
-  background-color: var(--bg-color);
   font-family: var(--main-font), sans-serif;
   font-size: 18px;
+  background-color: var(--bg-color);
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-position: center;
@@ -44,7 +44,7 @@
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
   padding: 3vi;
-  min-block-size: calc(100dvb - 20px);
+  min-block-size: 668;
   block-size: 100vh;
 }
 
@@ -94,11 +94,11 @@
 }
 
 .circle {
-  color: var(--accept-color);
   position: absolute;
   top: 10px;
   right: 10px;
   padding-inline-end: 2.7ch;
+  color: var(--accept-color);
   text-align: end;
   text-transform: uppercase;
 }
@@ -116,8 +116,8 @@
 }
 
 .header__text {
-  color: var(--header-text-color);
   align-self: center;
+  color: var(--header-text-color);
 }
 
 .main-title {
@@ -171,10 +171,10 @@
 }
 
 .attention {
-  padding-block-start: 57px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  padding-block-start: 50px;
 }
 
 .attention__wrapper {
@@ -334,7 +334,7 @@
   }
 
   .attention {
-    padding-block-start: 60px;
+    padding-block-start: 80px;
   }
 
   .attention__title {
